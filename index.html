@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>vldey.co — Player mock</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo">v</div>
+        <div class="title"><span class="title-main">vldey</span><span class="title-dot">.co</span></div>
+      </div>
+
+      <div class="actions">
+        <button id="uploadBtn" class="btn upload">Upload</button>
+      </div>
+    </header>
+
+    <section class="section">
+      <h3 class="section-title">Advertise</h3>
+
+      <article class="player-card" aria-label="Media player card">
+        <div class="player-inner">
+          <div class="play-area">
+            <svg class="ring" viewBox="0 0 120 120" width="120" height="120" aria-hidden="true">
+              <defs></defs>
+              <circle class="ring-bg" cx="60" cy="60" r="52" fill="none"></circle>
+              <circle class="ring-fg" cx="60" cy="60" r="52" fill="none" stroke-linecap="round"></circle>
+            </svg>
+
+            <button id="playBtn" class="play-btn" aria-pressed="false" aria-label="Play">
+              <svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7z" fill="#111"/>
+              </svg>
+            </button>
+          </div>
+
+          <div class="timeline">
+            <span class="time current">0:00</span>
+            <div class="timeline-controls" aria-hidden="true">
+              <!-- small icon placeholders -->
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
